@@ -1,4 +1,4 @@
-import Link from "next/link"
+import Link from "next/link";
 
 function HomePage() {
   return (
@@ -8,11 +8,15 @@ function HomePage() {
         <li>
           <Link href={"/"}>Home</Link>
         </li>
-        <li><Link href={"/about"}>About</Link></li>
-        <li><Link href={"/about/team"}>Team</Link></li>
+        <li>
+          <Link href={"/about"}>About</Link>
+        </li>
+        <li>
+          <Link href={"/about/team"}>Team</Link>
+        </li>
       </ul>
     </div>
-  )
+  );
 }
 
-export default HomePage
+export default HomePage;
