@@ -12,8 +12,9 @@ function  CourseSearch ({getSearchResults}) {
     }
   return (
     <div>
-      <form onSubmit={handleSearch}>
+      <form onSubmit={handleSearch} className="container gap-6 flex justify-center items-center">
         <input
+        className="outline-none w-1/2 border p-2 rounded "
         type="text"
         value={query}
         placeholder="Search by title"

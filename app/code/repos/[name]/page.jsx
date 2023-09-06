@@ -9,7 +9,7 @@ const RepoPage = ({params}) => {
   return (
     <div>
       <Link href={"/code/repos"}>Back to Repository</Link>
-      <Suspense fallback={<div>Loading repo ...</div>}>
+      <Suspense fallback={<div><div className="spinner"></div></div>}>
         <Repo name={name} />
       </Suspense>
       <Suspense fallback={<div>Loading directories...</div>}>

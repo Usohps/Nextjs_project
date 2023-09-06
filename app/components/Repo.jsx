@@ -1,4 +1,5 @@
 import Link from "next/link";
+
 //if the below endpoint is updated often or at anytime we need to add on to endpoint
   //an object next which takes a value of revalidate, here it checks for new updates on the endpoint and keeps
   // it updated on refresh.. revalidate @60 means it updates new data every 60seconds.
@@ -23,7 +24,7 @@ const Repo = async ({ name }) => {
           <span>{repo.stargazers_count}</span>
         </div>
         <div>
-          <span>{repo.watchers_count}</span>
+          <span className="border-red-200 border">{repo.watchers_count}</span>
         </div>
       </div>
   </>
