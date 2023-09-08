@@ -8,11 +8,13 @@ const RepoPage = ({params}) => {
   console.log(name)
   return (
     <div>
-      <Link href={"/code/repos"}>Back to Repository</Link>
-      <Suspense fallback={<div><div className="spinner"></div></div>}>
+      <Link href={"/code/repos"}>
+       <div><p>Back to Repository </p></div>
+        </Link>
+      <Suspense fallback={<div><p>Loading repositories....</p></div>}>
         <Repo name={name} />
       </Suspense>
-      <Suspense fallback={<div>Loading directories...</div>}>
+      <Suspense fallback={<div><p> Loading directories... </p></div>}>
         <RepoDirs name={name} />
       </Suspense>
     </div>
